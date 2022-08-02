@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     # Local
     "accounts",
     "pages",
+    'book_store'
 ]
 
 # MIDDLEWARE
@@ -60,7 +61,7 @@ WSGI_APPLICATION = "django_project.wsgi.application"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ["templates"],
+        "DIRS": [BASE_DIR/"templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
